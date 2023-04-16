@@ -1,0 +1,74 @@
+
+@import "../_contrib/node_modules/bootstrap/scss/bootstrap";
+
+:root {
+    --bs-body-font-size: 1rem;
+}
+
+blockquote {
+    @extend .alert;
+    @extend .alert-secondary;
+
+    border-left-width: 15px;
+
+    blockquote {
+        @extend .alert-primary;
+
+        blockquote {
+            @extend .alert-warning;
+            
+            blockquote {
+                @extend .alert-danger;
+
+                blockquote {
+                    @extend .alert-success;
+                }
+
+                &:has(blockquote) {
+                    border-left: none;
+                    padding: 0;
+                    border: none;
+                    margin: 0;
+                    color: inherit;
+                    background-color: inherit;
+                }
+            }
+
+            &:has(blockquote) {
+                border-left: none;
+                padding: 0;
+                border: none;
+                margin: 0;
+                color: inherit;
+                background-color: inherit;
+            }
+        }
+    }
+
+    &:has(blockquote) {
+        border-left: none;
+        padding: 0;
+        border: none;
+        margin: 0;
+        color: inherit;
+        background-color: inherit;
+
+        &::before {
+            content: "";
+            display: inherit;
+        }
+    }
+
+    & p:first-child, & p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+div.highlight:has(pre) {
+    margin-left: 25px;
+    margin-right: 25px;
+
+    pre {
+        padding: 10px;
+    }
+}
