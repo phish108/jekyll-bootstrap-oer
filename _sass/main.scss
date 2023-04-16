@@ -1,8 +1,10 @@
 
 @import "../_contrib/node_modules/bootstrap/scss/bootstrap";
 
-:root {
-    --bs-body-font-size: 1rem;
+@include media-breakpoint-up(md) { 
+    :root {
+        --bs-body-font-size: 1.2rem;
+    }
 }
 
 blockquote {
