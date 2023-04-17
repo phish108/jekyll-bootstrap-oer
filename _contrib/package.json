@@ -2,9 +2,10 @@
   "dependencies": {
     "bootstrap": "5.2.3",
     "bootstrap-icons": "1.10.4",
-    "katex": "^0.16.4"
+    "katex": "^0.16.4",
+    "mermaid": "^10.1.0"
   },
   "scripts": {
-    "build": "mkdir -p ../assets/bootstrap/ ../assets/bootstrap-icons/ ../assets/katex && cp -r ./node_modules/bootstrap-icons/font/* ../assets/bootstrap-icons && cp -r ./node_modules/bootstrap/dist/* ../assets/bootstrap && cp -r ./node_modules/katex/dist/* ../assets/katex"
+    "build": "mkdir -p ../assets/bootstrap/ ../assets/bootstrap-icons/ ../assets/katex ../assets/mermaid && cp -r ./node_modules/bootstrap-icons/font/* ../assets/bootstrap-icons && cp -r ./node_modules/bootstrap/dist/* ../assets/bootstrap && cp -r ./node_modules/katex/dist/* ../assets/katex && cp -r ./node_modules/mermaid/dist/* ../assets/mermaid "
   }
 }

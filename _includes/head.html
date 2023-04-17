@@ -15,6 +15,11 @@
         renderMathInElement(document.body);
     </script>
 
+    <script type="module">
+        import mermaid from "{{ '/assets/mermaid/mermaid.esm.min.mjs' | relative_url }}";
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+
     {% comment %}
     {% if site.search_enabled != false %}
       <script defer src="{{ '/assets/js/vendor/lunr.min.js' | relative_url }}"></script>
