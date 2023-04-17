@@ -66,6 +66,20 @@ blockquote {
     }
 }
 
+h1 {
+    &.page {
+        margin-top: 1rem;
+    }
+
+    &.chapter {
+        margin-top: 4rem;
+    }
+
+    &.TOC:first-child {
+        margin-top: 3.4rem;
+    }
+}
+
 div.highlight:has(pre) {
     margin-left: 25px;
     margin-right: 25px;
@@ -84,11 +98,17 @@ div.highlight:has(pre) {
     }
 
     h1 {
-        margin-top: 3em;
+        margin-top: 1rem;
         font-weight: bolder;
         font-size: 1.3rem;
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: .5rem;
+    }
+
+    .author {
+        margin-top: 0;
+        font-size: 0.9rem;
+        font-style: italic;
     }
 }
 
@@ -101,5 +121,64 @@ div.highlight:has(pre) {
 [lang="de"] {
     .TOC::before {
         content: "Inhaltsverzeichnis";
+    }
+}
+
+.highlighter-rouge {
+    position: relative;
+    .highlight::before {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 35px;
+        font-size: .8rem;
+        color: var(--bs-gray-600);
+    }
+
+    & > .highlight {
+        padding-top: .6rem;
+    }
+}
+
+.language-R > .highlight::before {
+        content: "R";
+}
+
+.language-js > .highlight::before {
+    content: "JavaScript";
+}
+
+.language-python > .highlight::before {
+    content: "Python";
+}
+
+.language-json > .highlight::before {
+    content: "JSON";
+}
+
+.language-yaml > .highlight::before {
+    content: "YAML";
+}
+
+.language-markdown > .highlight::before {
+    content: "markdown";
+}
+
+pre:has(.language-excel) { 
+    position: relative;
+
+    padding: 10px;
+    margin-left: 25px;
+    margin-right: 20px;
+    background-color: #f8f8f8;
+    
+
+    .language-excel::before {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        content: "MS Excel";
+        font-size: .8rem;
+        color: var(--bs-gray-600);
     }
 }

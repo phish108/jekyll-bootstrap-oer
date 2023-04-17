@@ -1,7 +1,16 @@
 <div class="sidebar" lang="{{ site.language }}">
     {% if page.title != site.title %}
     <a href="/"><h1>{{ site.title }}</h1></a>
-    <p>{{ site.author.name }}</p>
+    {% if site.author.name %}
+    <p class="author">{{ site.author.name }}</p>
+    {% else %}
+    {% for author in site.author %}
+    <p class="author">{{ author.name }}</p>
+    {% endfor %}
+    {% endif %}
+    {% endif %}
+
+    {% if page.title != site.title %}
     {% else %}
     <h1 class="TOC"></h1>
     {% endif %}
