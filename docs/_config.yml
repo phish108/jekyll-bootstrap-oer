@@ -12,3 +12,7 @@ language: de
 markdown: kramdown
 kramdown:
   input: GFM
+
+ignore:
+- assets
+- contrib
