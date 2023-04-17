@@ -1,3 +1,5 @@
+remote_theme: phish108/jekyll-bootstrap-oer
+
 title: Bootstrap OER
 description: An OER-theme for Jekyll based on Bootstrap 5
 
@@ -10,9 +12,3 @@ language: de
 markdown: kramdown
 kramdown:
   input: GFM
-
-exclude: 
-  - contrib/
-  - _contrib/
-  - Gemfile
-  - Gemfile.lock
