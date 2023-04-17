@@ -1,6 +1,16 @@
+title: Bootstrap OER
+description: An OER-theme for Jekyll based on Bootstrap 5
+
+author: 
+  name: Christian Glahn
+  email: christian.glahn@zhaw.ch
+
 markdown: kramdown
 kramdown:
   input: GFM
 
 exclude: 
-  - contrib
+  - contrib/
+  - _contrib/
+  - Gemfile
+  - Gemfile.lock
