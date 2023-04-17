@@ -5,6 +5,8 @@ author:
   name: Christian Glahn
   email: christian.glahn@zhaw.ch
 
+language: de
+
 markdown: kramdown
 kramdown:
   input: GFM
