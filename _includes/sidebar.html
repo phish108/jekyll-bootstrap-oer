@@ -1,14 +1,16 @@
-<div class="sidebar">
-    {% if page.is_index != true %}
+<div class="sidebar" lang="{{ site.language }}">
+    {% if page.title != site.title %}
     <a href="/"><h1>{{ site.title }}</h1></a>
     <p>{{ site.author.name }}</p>
+    {% else %}
+    <h1 class="TOC"></h1>
     {% endif %}
 
     <ul>
     {% assign sortedpages = site.pages | sort: "nav_order" %}
 
     {% for page in sortedpages %}
-        {% if page.title and page.nav_exclude != true %}
+        {% if page.title and page.nav_exclude != true and page.title != site.title %}
         {% unless page.parent %}
             <li>
                 <a href="{{ page.url | relative_url }}">{{ page.title }}</a>

@@ -58,10 +58,6 @@
 .highlight .gt {
   color: #aa0000;
 }
-.highlight .kc {
-  color: #000000;
-  font-weight: bold;
-}
 .highlight .kd {
   color: #000000;
   font-weight: bold;
@@ -101,7 +97,10 @@
 .highlight .mo {
   color: #009999;
 }
-.highlight .m, .highlight .mb, .highlight .mx {
+.highlight .kc {
+    font-weight: bold;
+}
+.highlight .m, .highlight .mb, .highlight .mx, .highlight .kc {
   color: #009999;
 }
 .highlight .sa {
