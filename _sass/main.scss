@@ -144,6 +144,10 @@ div.highlight:has(pre) {
         content: "R";
 }
 
+.language-julia > .highlight::before {
+    content: "Julia";
+}
+
 .language-js > .highlight::before {
     content: "JavaScript";
 }
@@ -152,12 +156,48 @@ div.highlight:has(pre) {
     content: "Python";
 }
 
+.language-perl > .highlight::before {
+    content: "Perl";
+}
+
+.language-php > .highlight::before {
+    content: "PHP";
+}
+
+.language-bash > .highlight::before {
+    content: "bash";
+}
+
+.language-powershell > .highlight::before {
+    content: "PowerShell";
+}
+
+.language-go > .highlight::before {
+    content: "Go";
+}
+
+.language-docker > .highlight::before {
+    content: "Dockerfile";
+}
+
 .language-json > .highlight::before {
     content: "JSON";
 }
 
 .language-yaml > .highlight::before {
     content: "YAML";
+}
+
+.language-graphql > .highlight::before {
+    content: "GraphQL";
+}
+
+.language-SQL > .highlight::before {
+    content: "SQL";
+}
+
+.language-xml > .highlight::before {
+    content: "XML";
 }
 
 .language-markdown > .highlight::before {
