@@ -153,8 +153,12 @@ header {
 }
 
 @include media-breakpoint-down(md) {
-    .toc-toggle-off {
+    .toc {
         display: none;
+        
+        &.show {
+            display: block;
+        }
     }
 }
 
