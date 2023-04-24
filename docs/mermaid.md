@@ -1,5 +1,5 @@
 ---
-title: Highlights
+title: Diagrams
 layout: chapter
 ---
 

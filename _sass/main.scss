@@ -96,6 +96,14 @@ div.highlight:has(pre) {
         color: var(--bs-dark);
         text-decoration: none;
     }
+
+    h1 {
+        margin-top: 1rem;
+        font-weight: bolder;
+        font-size: 1.3rem;
+        display: block;
+        margin-bottom: .5rem;
+    }
 }
 
 header {   
