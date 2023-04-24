@@ -151,12 +151,10 @@ header {
 
 @include media-breakpoint-down(md) {
     header {
-        position: fixed;
-        bottom: 0;
-    }
-
-    .maincontent {
-        margin-bottom: 15rem;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-color: var(--bs-white);
     }
 }
 
