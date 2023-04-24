@@ -93,7 +93,6 @@ div.highlight:has(pre) {
 }
 
 header {   
-
     .sidetitle {
         @extend .col-10;
         @extend .col-md-3;
@@ -143,6 +142,21 @@ header {
         margin-top: 0;
         font-size: 0.9rem;
         font-style: italic;
+    }
+}
+
+.maincontent {
+    @extend .row;
+}
+
+@include media-breakpoint-down(md) {
+    header {
+        position: fixed;
+        bottom: 0;
+    }
+
+    .maincontent {
+        margin-bottom: 15rem;
     }
 }
 
