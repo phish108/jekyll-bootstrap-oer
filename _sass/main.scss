@@ -153,9 +153,9 @@ header {
 }
 
 @include media-breakpoint-down(md) {
-    .toc {
+    .toc, .TOC {
         display: none;
-        
+
         &.show {
             display: block;
         }
