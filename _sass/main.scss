@@ -83,7 +83,7 @@ div.highlight:has(pre) {
 
 .toc-toggle {
     @extend .col-2;
-    @extend .col-sm-2;
+    // @extend .col-sm-2;
     @extend .d-md-none;
 
     .bi-list {
