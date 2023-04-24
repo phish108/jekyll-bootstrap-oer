@@ -91,7 +91,9 @@ div.highlight:has(pre) {
 
 .sidebar {
     @extend .col-md-3;
+}
 
+header {
     a {
         color: var(--bs-dark);
         text-decoration: none;

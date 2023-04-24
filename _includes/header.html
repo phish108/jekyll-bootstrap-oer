@@ -1,5 +1,25 @@
 <div class="row">
     <div class="col-md-12">
-        <header></header>
+        <header class="row">
+            {% if page.title != site.title %}
+            <div class="col-xs-10 col-sm-10 col-md-3">
+            {% else %}
+            <div class="col-xs-10 col-sm-10 offset-md-3 col-md-9"></div>
+            {% endif %}
+                <a href="{{ site.baseurl }}"><h1>{{ site.title }}</h1></a>
+                <ul class="author">
+                {% if site.author.name %}
+                    <li>{{ site.author.name }}</li>
+                {% else %}
+                    {% for author in site.author %}
+                    <li>{{ author.name }}</li>
+                    {% endfor %}
+                {% endif %}
+                </ul>
+            </div>
+            <div class="col-xs-2 col-sm-2">
+                <i class="bi bi-list"></i>
+            </div>
+        </header>
     </div>
 </div>

@@ -6,3 +6,4 @@ Gemfile.lock
 
 contrib/node_modules
 _contrib/node_modules
+_config.yml
