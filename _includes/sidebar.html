@@ -4,7 +4,7 @@
     <h1 class="TOC"></h1>
     {% endif %}
 
-    <ul>
+    <ul class="toc-toggle-off">
     {% assign sortedpages = site.pages | sort: "nav_order" %}
 
     {% for page in sortedpages %}
