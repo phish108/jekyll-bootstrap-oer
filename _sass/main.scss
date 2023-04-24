@@ -110,8 +110,7 @@ div.highlight:has(pre) {
 
 header {   
     .sidetitle {
-        @extend .col-xs-10;
-        @extend .col-sm-10;
+        @extend .col-10;
         @extend .col-md-3;
 
         h1 {
