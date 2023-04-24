@@ -258,6 +258,10 @@ header {
     content: "SQL";
 }
 
+.language-html > .highlight::before {
+    content: "HTML";
+}
+
 .language-xml > .highlight::before {
     content: "XML";
 }
