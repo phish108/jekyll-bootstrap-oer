@@ -81,6 +81,12 @@ div.highlight:has(pre) {
     }
 }
 
+.toc-toggle {
+    @extend .col-xs-2;
+    @extend .col-sm-2;
+    @extend .d-md-none;
+}
+
 .sidebar {
     @extend .col-md-3;
 
