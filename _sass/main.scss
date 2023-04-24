@@ -67,14 +67,6 @@ blockquote {
 }
 
 h1 {
-    &.page {
-        margin-top: 1rem;
-    }
-
-    &.chapter {
-        margin-top: 4rem;
-    }
-
     &.TOC:first-child {
         margin-top: 3.4rem;
     }
@@ -107,6 +99,20 @@ div.highlight:has(pre) {
 }
 
 header {   
+    .sidetitle {
+        @extend .col-xs-10;
+        @extend .col-sm-10;
+        @extend .col-md-3;
+
+        h1 {
+            margin-top: 1rem;
+            font-weight: bolder;
+            font-size: 1.3rem;
+            display: block;
+            margin-bottom: .5rem;
+        }
+    }
+
     a {
         color: var(--bs-dark);
         text-decoration: none;
