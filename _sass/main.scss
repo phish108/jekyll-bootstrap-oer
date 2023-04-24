@@ -139,12 +139,6 @@ header {
         }
     }
 
-    @include media-breakpoint-down(md) {
-        .toc-toggle-off {
-            @extend .d-none;
-        }
-    }
-
     a {
         color: var(--bs-dark);
         text-decoration: none;
@@ -155,6 +149,12 @@ header {
         margin-top: 0;
         font-size: 0.9rem;
         font-style: italic;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .toc-toggle-off {
+        display: none;
     }
 }
 
